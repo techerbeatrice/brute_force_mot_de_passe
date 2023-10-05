@@ -10,6 +10,10 @@ avec **nmap -O IP de la machine connectée** et **nmap --script default IP de la
 Scan des vulnérabilités avec **nmpap -v --script vuln IP de la machine connectée**  
 ____
 
+
+![image](https://github.com/techerbeatrice/brute_force_mot_de_passe/assets/138071140/27181ac6-8086-46bf-82a4-8e9e939d99f1)
+
+
 ![image](https://github.com/techerbeatrice/brute_force_mot_de_passe/assets/138071140/2fd3b248-1870-4147-9fc5-da17a689d2b6)
 
 ![image](https://github.com/techerbeatrice/brute_force_mot_de_passe/assets/138071140/03415c7f-de60-4abb-812c-adda0fd781fb)

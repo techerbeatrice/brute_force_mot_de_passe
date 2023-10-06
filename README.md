@@ -58,4 +58,6 @@ Résultat…
 [80][http-post-form] host: 10.10.219.212   login: molly   password: sunshine
 1 of 1 target successfully completed, 1 valid password found
 
+![image](https://github.com/techerbeatrice/brute_force_mot_de_passe/assets/138071140/ba0b322c-55dd-414b-a14e-4249292e0410)
+
 

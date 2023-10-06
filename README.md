@@ -35,7 +35,7 @@ _____
 
 Le lien php à craquer :    
 
-http://192.168.56.104/login.php?login=admin
+http://challenge.servehttp.com/login.php
 
 _____
 
